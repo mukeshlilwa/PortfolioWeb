@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Staatliches&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0" id="profile-container">
+      <!-- Navigation Bar -->
+      <header class="position-fixed">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid" id="nav-container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="Images/logo.png" alt="Logo" width="50" />
+            </a>
+      
+            <!-- Offcanvas Toggle Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Offcanvas Navbar -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#message-me">Message Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+
+      <!-- Sections -->
+      <!-- Contact Us Section -->
+      <section id="contact" class="py-5">
+        <div class="row" id="profile-row">
+          <!-- Column for Image -->
+          <div
+            class="col-12 col-md-7 order-1 order-md-2 d-flex justify-content-center"
+          >
+            <img
+              src="Images/1710002347036_1-removebg-preview.png"
+              alt="Mukesh Kumar"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Column for Text -->
+          <div
+            class="col-12 col-md-5 ps-sm-3 order-1 order-md-1 d-flex flex-column justify-content-center"
+          >
+            <h2>Hi, I am</h2>
+            <h1>Mukesh Kumar</h1>
+            <p>Front-end Developer, QA Engineering</p>
+            <div class="row" id="icons-row">
+              <div class="col-md-4">
+                <div class="contents">
+                  <a href="https://www.linkedin.com/in/mukeshkumarlilwa/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/mukeshlilwa"
+                    ><i class="fa-brands fa-square-github"></i
+                  ></a>
+                  <a
+                    href="mailto:mukeshlilwa13@gmail.com?subject=Support Request&body=Hi,%20I%20need%20help%20with..."
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid no-margin-bottom" id="info-container">
+          <div class="row">
+            <div class="col-9">
+              <h2>IT BERRIES</h2>
+              <p>
+                Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel
+                sem varius finibus. Sed ornare sit amet lorem sed viverra. In
+                vel urna quis libero viverra facilisis ut ac est. Morbi commodo,
+                eros in dignissim tempus, lacus odio rutrum augue, in semper sem
+                magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum
+                sit amet elit. Nunc egestas nisi eget enim gravida facilisis.
+                Pellentesque laoreet varius turpis vel pharetra. Ut ante justo,
+                consequat vitae elementum tempor, accumsan nec eros. amet lorem
+                sed viverra. In vel urna quis libero viverra facilisis ut ac
+                <br /><br />
+                | Read More |
+              </p>
+            </div>
+            <div class="col-3">
+              <img src="Images/LogoITB.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="">
+        <div class="container about-us-container">
+          <div class="about-tex text-center">
+            <h2>ABOUT ME</h2>
+            <p>
+              I am a dedicated Computer Engineer with a strong foundation in
+              software development and a keen interest in web technologies. With
+              3 months of experience in web development, I have honed my skills
+              in building responsive and dynamic websites using HTML, CSS,
+              JavaScript, and modern frameworks. I am passionate about creating
+              user-centric designs that enhance functionality and deliver
+              seamless experiences.
+            </p>
+            <h3>| EXPLORE |</h3>
+            <img src="Images/separatorBlack 1.png" />
+          </div>
+          <div class="row" id="about-info-row">
+            <div class="col-6 desgin-column">
+              <h3>DESIGN</h3>
+              <p>
+                I can design the site based on your needs and suggestions. I can
+                also design the site from scratch and consult you during the
+                job.
+              </p>
+            </div>
+            <div class="col-6 development-column">
+              <h3>DEVELOPMENT</h3>
+              <p>
+                I can design the site based on your needs and suggestions. I can
+                also design the site from scratch and consult you during the
+                job.
+              </p>
+            </div>
+            <div class="col-6 testing-column">
+              <h3>TESTING</h3>
+              <p>
+                I can design the site based on your needs and suggestions. I can
+                also design the site from scratch and consult you during the
+                job.
+              </p>
+            </div>
+          </div>
+          <div class="separator-img-container">
+            <img
+              src="Images/separatorBlack 1.png"
+              alt="Separator"
+              class="separator-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="skills-section text-center">
+          <h2>SKILLS</h2>
+          <h3>USING NOW:</h3>
+        </div>
+        <div class="container" id="skill-container">
+          <div class="ids-using">
+            <img src="Images/html.svg" id="html-img" />
+            <p>HTML 5</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/css.svg" id="html-img" />
+            <p>CSS 3</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/git.svg" id="html-img" />
+            <p>Git</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/figma.svg" id="html-img" />
+            <p>Figma</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/bootstrap.png" id="html-img" />
+            <p>Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="skills-section text-center">
+          <h3>LRANING:</h3>
+        </div>
+        <div class="container" id="skill-container">
+          <div class="ids-using">
+            <img src="Images/js.svg" id="html-img" />
+            <p>Javascript</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/react.svg" id="html-img" />
+            <p>React</p>
+          </div>
+        </div>
+
+        <div class="skills-section text-center">
+          <h3>OTHER SKILLS:</h3>
+        </div>
+        <div class="container" id="skill-container">
+          <div class="ids-using">
+            <img src="Images/cpp.svg" id="html-img" />
+            <p>C++</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/c.svg" id="html-img" />
+            <p>C</p>
+          </div>
+          <div class="ids-using">
+            <img src="Images/python.png" id="html-img" />
+            <p>Python</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="">
+        <div class="container-fluid" id="portfolio-container">
+          <h2>PORTFOLIO</h2>
+        </div>
+
+        <div class="container-fluid p-1" id="slider-portfolio">
+          <!-- Tab Navigation -->
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                ALL
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                CODED
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                DESIGNED
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- ALL Tab -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.e6a0ec3272827e77d0d76e22691d5d77.jpeg"
+                      alt="Card 1 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Open Ecom</h5>
+                    <p class="card-text">Ecommerce Site</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.06dd01c595864473009cad5c994ffe30.jpeg"
+                      alt="Card 2 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Personal Portfolio</h5>
+                    <p class="card-text">Personal Portfolio Website.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/41fbb2dbacc765b3fa54577267e8758d.jpg"
+                      alt="Card 3 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Signup Form</h5>
+                    <p class="card-text">Designed Signup Form.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/OIP.A_cLL-iACCnltQ1Sww6whAHaEe.jpeg"
+                      alt="Card 4 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Socail Media Links</h5>
+                    <p class="card-text">Contain all socail media links.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/6410ebf8e483b53d6186fc53_ABM College Web developer main.jpg"
+                      alt="Card 5 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Foodgo</h5>
+                    <p class="card-text">Food ordering Web Portal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CODED Tab -->
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.e6a0ec3272827e77d0d76e22691d5d77.jpeg"
+                      alt="Card 1 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Socail Media Links</h5>
+                    <p class="card-text">Contain all socail media links.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.06dd01c595864473009cad5c994ffe30.jpeg"
+                      alt="Card 2 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Signup Form</h5>
+                    <p class="card-text">Designed Signup Form.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/41fbb2dbacc765b3fa54577267e8758d.jpg"
+                      alt="Card 3 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Open Ecom</h5>
+                    <p class="card-text">Ecommerce Site</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DESIGNED Tab -->
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.e6a0ec3272827e77d0d76e22691d5d77.jpeg"
+                      alt="Card 1 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Open Ecom</h5>
+                    <p class="card-text">Ecommerce Site</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="Images/R.06dd01c595864473009cad5c994ffe30.jpeg"
+                      alt="Card 2 Image"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title">Socail Media Links</h5>
+                    <p class="card-text">Contain all socail media links.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="message-me" class="">
+        <div class="container-fluid" id="message-me-container">
+          <div class="message-text text-center">
+            <h2>MESSAGE ME</h2>
+            <p>
+              Want to contact with me or need any service? Message me. I will
+              reply fast.
+            </p>
+            <img src="Images/separatorBlack 1.png" alt="" />
+          </div>
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card shadow-sm">
+                  <div class="card-body mt-5 mb-5">
+                    <form>
+                      <!-- Name Input -->
+                      <div class="mb-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+
+                      <!-- Email Input -->
+                      <div class="mb-5">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your Email"
+                          required
+                        />
+                      </div>
+
+                      <!-- Phone Input -->
+                      <div class="mb-5">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Your Phone Number"
+                          required
+                        />
+                      </div>
+
+                      <!-- Message Input -->
+                      <div class="mb-5">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          rows="4"
+                          placeholder="Your Message"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container-fluid" id="footer-container">
+          <div class="footer-logo">
+            <img src="Images/logo.png" alt="" />
+          </div>
+          <div class="socail-links">
+            <a href="https://www.linkedin.com/in/mukeshkumarlilwa/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/mukeshlilwa"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a
+              href="mailto:mukeshlilwa13@gmail.com?subject=Support Request&body=Hi,%20I%20need%20help%20with..."
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <p>@2024 Mukesh Kumar <span>All Rights Reserved.</span></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
